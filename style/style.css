@@ -1,0 +1,109 @@
+/*Global Css*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body::-webkit-scrollbar{
+    width: 8px;
+  }
+  body::-webkit-scrollbar-thumb{
+    background-color: #0056d898;
+    border-radius: 50px;
+  }
+  body::-webkit-scrollbar-track{
+    background-color: #777;
+  }
+  body{
+    color: #a4acc4;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 1.2rem;
+  }
+.navbar{
+    background:rgb(2, 1, 44);
+    padding: 0 !important;
+}
+.footer-bottom{
+    background:rgb(2, 1, 44);
+
+}
+.navbar-nav li a{
+    color: #fff !important;
+    font-weight: 600;
+}
+
+/*Banner Section*/
+#banner-area{
+    background:rgb(2, 1, 44);
+    color: #fff;
+    padding-top: 4%;
+}
+.promo-title{
+    font-size: 2rem;
+    font-weight: 600;
+}
+#banner a{
+    color: #fff;
+    text-decoration: none;
+}
+.shop-now{
+    background:#00A5c4;
+}
+.shopp-now{
+    color: white;
+}
+
+.social-icons img{
+    width: 60px;
+    transition:0.5s;
+}
+.social-icons a:hover img{
+   transform: translateY(-10px);
+}
+
+/*Flip Cards*/
+
+.thecard{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    background-color:rgb(37, 37, 105);
+    box-shadow:0 0 3px whitesmoke, 0 0 5px whitesmoke;
+}
+.thecard:hover{
+    transform: rotateY(180deg);
+
+}
+
+.result{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(37, 37, 105);
+    box-shadow:0 0 3px whitesmoke, 0 0 5px whitesmoke;
+}
+.thefront{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    color: #333;
+    top: 30%;
+}
+.front{
+    width: 100%;
+    height: 100%;
+    top: 30%;
+    position: relative;
+}
+.theback{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 30%;
+    backface-visibility: hidden;
+    color: #333;
+    transform: rotateY(180deg);
+}
